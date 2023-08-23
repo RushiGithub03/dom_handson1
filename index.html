@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <h2>Question-1 : Write the code to access element which is having id as "text"</h2>
+
+    <div class="container">
+        <h1 id="text">This is h1 Tag</h1>
+    </div>
+
+
+    <div class="question2">
+        <h2>Question-2 : Write the code to access element which is having tag as "h1"</h2>
+    </div>
+
+    <div class="containers">
+
+        <h1>
+            hello
+        </h1>
+
+        <span>This is heading</span>
+        <h1>
+            hello world
+        </h1>
+
+        <span>This is second heading</span>
+
+        <h1>hiii.....</h1>
+    </div>
+
+
+    <!--question 3 started here -->
+    <div class="question3">
+        <h2>Question-3 : Write the code to access element which is having class as "box"</h2>
+    </div>
+
+    <div class="box">
+
+        <div class="inner-container">
+
+            <h1>This is h1 tag</h1>
+        </div>
+    </div>
+
+    <div class="box">
+        <p>
+            This is paragraph tag
+        </p>
+    </div>
+
+
+    <div class="box">
+        <span>This is span tag</span>
+    </div>
+
+
+    <!-- question 4 -->
+
+    <div class="question4">
+
+        <h2> Question-4:
+
+            Change the heading from ""Hello"" to ""Hello World"" using DOM functions</h2>
+    </div>
+    <div class="container2">
+
+        <h1 id="hd">
+            Hello
+        </h1>
+    </div>
+
+
+
+    <div class="question5">
+        <h2>
+            Question-5 : Create an HTML page having content as Hello world and a button named Replace Text.
+            When <br> user will click on this button page content should be changed to "Welcome to Elevation academy"
+        </h2>
+    </div>
+    <div class="container5">
+        <h1 id="headings">Hello World</h1>
+        <button>Replaced Text</button>
+    </div>
+
+
+    <!-- question 6 solution -->
+
+    <h2>question-6 :
+
+        Add one style attribute and give text color as red and id attribute and <br> give the id value as ""heading"" in
+        the above given h1 tag using DOM functions"</h2>
+    </div>
+
+    <div class="container6">
+        <h1 class="q6">hello</h1>
+    </div>
+
+
+    <!-- question-7 -->
+
+    <div class="question7">
+        <h2>
+            question 7 :
+            Create three cards on HTML page and arrange them using flex property in row or horizontal <br>
+            direction and also create button at the bottom named "Change Flex direction". When user <br>
+            clicks on this button, the cards arrangement should be changed to vertical direction.
+        </h2>
+    </div>
+
+    <div class="container7">
+        <div class=" boxx box1">card1</div>
+        <div class="boxx  box2">card2</div>
+        <div class="boxx box3">card3</div>
+
+
+    </div>
+
+    <div class="container-2">
+        <br>
+        <button id="bn" onclick="adds()">Change Flex direction</button>
+        <!-- <button> Change flex direction</button> -->
+    </div>
+
+
+    <!-- question no8 -->
+
+    <div class="container8">
+        <h2>
+
+            question-8 Difference between window and Document
+        </h2>
+        <table width="100%" border="1px">
+            <tr>
+                <th>window</th>
+                <th>Document</th>
+            </tr>
+
+            <!-- <tr>
+                <td>Each browser tab has its own top-level window object. Each <iframe> (and deprecated <frame>) element
+                            has its own window object too, nested within a parent window. Each of these windows gets its
+                            own separate global object. window.window always refers to window, but window.parent and
+                            window.top might refer to enclosing windows, giving access to other execution contexts. In
+                            addition to document and screen described below, window properties include</td>
+
+                <td>
+                    Each window object has a document object to be rendered. These objects get confused in part because
+                    HTML elements are added to the global object when assigned a unique id. E.g., in the HTML snippet
+
+                    <body>
+                        <p id="holyCow"> This is the first paragraph.</p>
+                    </body>
+                </td>
+
+            </tr> -->
+
+            <tr>
+
+                <td>setTimeout() and setInterval() binding event handlers to a timer</td>
+                <td>no such binding events</td>
+
+            </tr>
+
+            <tr>
+                <td>location giving the current URL</td>
+                <td>Not in the Document</td>
+            </tr>
+
+            <tr>
+                <td>history with methods back() and forward() giving the tab's mutable history</td>
+                <td>we can't do in document</td>
+            </tr>
+
+            <tr>
+                <td>
+                    navigator describing the browser software
+                </td>
+                <td>not available in Document</td>
+            </tr>
+        </table>
+
+        <br> <br>
+    </div>
+
+    <!-- question no9 -->
+
+
+
+    <div class="question9">
+
+        <div class="in-bx">
+            <h2>Question: 9
+
+                Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every
+                second
+            </h2>
+
+        </div>
+
+
+    </div>
+
+    <div class="right-container">
+        <div class="container9">
+            <div class="time">
+                <div class="time2">
+                    <div>
+                        <p id="timep">TIME</p>
+                    </div>
+                    <div class="hours">
+                        <p id="hrs">10</p>
+                        <p class="hrs">hours</p>
+                    </div>
+
+                    <div>
+                        <p class="colonn">:</p>
+                    </div>
+                    <div class="mins">
+                        <p id="mins">00</p>
+                        <p class="mn">mins</p>
+                    </div>
+                    <div>
+                        <p class="colonn">:</p>
+                    </div>
+                    <div class="sec">
+                        <p id="secs">01</p>
+                        <p class="sss">sec</p>
+                    </div>
+                    <div class="ampm">
+                        <p id="ampm">AM</p>
+                    </div>
+                </div>
+                <!-- <div class="time backgrund-1" id="timeback1"></div>
+            <div class="time backgrund-2" id="timeback2"></div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>
